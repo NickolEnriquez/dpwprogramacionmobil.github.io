@@ -188,9 +188,15 @@ p {
     margin-bottom: 10px; /* Agrega un poco de espacio entre los enlaces */
 }
 
+#semana6 a {
+    display: block; /* Esto asegura que cada enlace esté en su propia línea */
+    margin-bottom: 10px; /* Agrega un poco de espacio entre los enlaces */
+}
+
 
 /* Estilo para que los enlaces se muestren uno debajo del otro */
 #semana3 a {
     display: block; /* Esto asegura que cada enlace esté en su propia línea */
     margin-bottom: 10px; /* Agrega un poco de espacio entre los enlaces */
 }
+
