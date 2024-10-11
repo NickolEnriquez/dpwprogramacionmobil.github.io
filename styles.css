@@ -193,10 +193,137 @@ p {
     margin-bottom: 10px; /* Agrega un poco de espacio entre los enlaces */
 }
 
+/* Estilos básicos para la página */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
 
-/* Estilo para que los enlaces se muestren uno debajo del otro */
-#semana3 a {
-    display: block; /* Esto asegura que cada enlace esté en su propia línea */
-    margin-bottom: 10px; /* Agrega un poco de espacio entre los enlaces */
+h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px; /* Sangría para la lista */
+    list-style-type: disc; /* Estilo de lista */
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Estilos para el enlace */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff; /* Color del enlace */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3; /* Color del enlace al pasar el mouse */
+}
+
+/* Estilo para la boleta o contenedor */
+.boleta {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px; /* Margen superior */
+}
+
+
+/* Estilos básicos para la página */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el acordeón */
+.accordion {
+    margin-top: 20px;
+}
+
+.toggle-input {
+    display: none; /* Ocultar el checkbox */
+}
+
+.toggle-btn {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+}
+
+.toggle-content {
+    display: none; /* Inicialmente oculto */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-top: 5px; /* Espacio entre el botón y el contenido */
+}
+
+.toggle-input:checked + .toggle-btn + .toggle-content {
+    display: block; /* Mostrar el contenido al activar el checkbox */
+}
+
+.toggle-content h3 {
+    margin-top: 0;
+}
+
+.toggle-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.toggle-content a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.toggle-content a:hover {
+    color: #0056b3;
 }
 
