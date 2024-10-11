@@ -64,20 +64,95 @@
 
         </section>
 
-        <section id="semana6">
+       <section id="semana6">
             <h2>Semana 6</h2>
-            <p>La actividad consiste en implementar las aplicaciones y luego crear un portafolio con cada uno de los proyectos formulados. </p>
-            <a href="dart/S6_ejercicio01.dart">Ver Ejercicio01</a><p>Enunciado: Una empresa paga a sus vendedores un sueldo bruto que se calcula sumando un sueldo básico más una comisión. El sueldo básico es S/. 350.75. La comisión es igual al 5% del importe total vendido en el mes. Por ley, todo empleado está sujeto a un descuento igual al 15% del sueldo bruto. Diseñe un algoritmo que imprima la boleta de un vendedor indicando el sueldo básico, la comisión, el sueldo bruto, el descuento y el sueldo neto.
-                
-                Requerimientos Funcionales:
-                Calcular la comisión (5% de las ventas).
-                Calcular el sueldo bruto sumando el sueldo básico y la comisión.
-                Aplicar un descuento del 15% sobre el sueldo bruto.
-                Calcular el sueldo neto restando el descuento al sueldo bruto.</p>
-            <a href="dart/S6_ejercicio02.dart">Ver Ejercicio02</a>
-            <a href="dart/S6_ejercicio03.dart">Ver Ejercicio03</a>
-            <a href="dart/S6_ejercicio04.dart">Ver ejercicio04</a>
-        </section>
+<p>La actividad consiste en implementar las aplicaciones y luego crear un portafolio con cada uno de los proyectos formulados.</p>
+
+<!-- Acordeón para el Ejercicio 01 -->
+<div class="accordion">
+    <input type="checkbox" id="exercise1" class="toggle-input">
+    <label for="exercise1" class="toggle-btn">Ejercicio 01</label>
+    
+    <div class="toggle-content">
+        <h3>Enunciado:</h3>
+        <p>Una empresa paga a sus vendedores un sueldo bruto que se calcula sumando un sueldo básico más una comisión. El sueldo básico es S/. 350.75. La comisión es igual al 5% del importe total vendido en el mes. Por ley, todo empleado está sujeto a un descuento igual al 15% del sueldo bruto. Diseñe un algoritmo que imprima la boleta de un vendedor indicando el sueldo básico, la comisión, el sueldo bruto, el descuento y el sueldo neto.</p>
+        
+        <h3>Requerimientos Funcionales:</h3>
+        <ul>
+            <li>Calcular la comisión (5% de las ventas).</li>
+            <li>Calcular el sueldo bruto sumando el sueldo básico y la comisión.</li>
+            <li>Aplicar un descuento del 15% sobre el sueldo bruto.</li>
+            <li>Calcular el sueldo neto restando el descuento al sueldo bruto.</li>
+        </ul>
+        
+        <a href="dart/S6_ejercicio01.dart">Ver Ejercicio01</a>
+    </div>
+</div>
+
+<!-- Acordeón para el Ejercicio 02 -->
+<div class="accordion">
+    <input type="checkbox" id="exercise2" class="toggle-input">
+    <label for="exercise2" class="toggle-btn">Ejercicio 02</label>
+    
+    <div class="toggle-content">
+        <h3>Enunciado:</h3>
+        <p>Una empresa expondrá sus productos en una feria. Dado el monto total de dinero a invertir, diseñe un programa que determine cuánto gastará la empresa en cada rubro.</p>
+        
+        <h3>Requerimientos Funcionales:</h3>
+        <ul>
+            <li>Solicitar el monto total de inversión.</li>
+            <li>Calcular los gastos para cada rubro en base a los porcentajes establecidos.</li>
+            <li>Imprimir los valores distribuidos en cada rubro.</li>
+        </ul>
+        
+        <a href="dart/S6_ejercicio02.dart">Ver Ejercicio02</a>
+    </div>
+</div>
+
+<!-- Acordeón para el Ejercicio 03 -->
+<div class="accordion">
+    <input type="checkbox" id="exercise3" class="toggle-input">
+    <label for="exercise3" class="toggle-btn">Ejercicio 03</label>
+    
+    <div class="toggle-content">
+        <h3>Enunciado:</h3>
+        <p>Una tienda ha puesto en oferta la venta de camisas ofreciendo un descuento, por temporada de verano, denominado 7% + 7%. Se requiere diseñar un programa que calcule el importe de la compra, los descuentos y el importe a pagar.</p>
+        
+        <h3>Requerimientos Funcionales:</h3>
+        <ul>
+            <li>El importe de la compra: que es igual al producto del precio de la camisa por la cantidad de unidades adquiridas.</li>
+            <li>El importe del primer descuento: que es igual al 7% del importe de la compra.</li>
+            <li>El importe del segundo descuento: que es igual al 7% de lo que queda después de restar el importe de la compra menos el importe del primer descuento.</li>
+            <li>El importe del descuento total: que es igual a la suma de los dos descuentos anteriores.</li>
+            <li>El importe a pagar: que es igual al importe de la compra menos el importe del descuento total.</li>
+        </ul>
+        
+        <a href="dart/S6_ejercicio03.dart">Ver Ejercicio03</a>
+    </div>
+</div>
+
+<!-- Acordeón para el Ejercicio 04 -->
+<div class="accordion">
+    <input type="checkbox" id="exercise4" class="toggle-input">
+    <label for="exercise4" class="toggle-btn">Ejercicio 04</label>
+    
+    <div class="toggle-content">
+        <h3>Enunciado:</h3>
+        <p>El sueldo bruto de los empleados de una empresa se calcula sumando el sueldo básico más la bonificación por hijos. El sueldo básico se calcula multiplicando las horas trabajadas por la tarifa horaria. Diseñe un programa que determine el sueldo básico, el sueldo bruto, el descuento y el sueldo neto.</p>
+        
+        <h3>Requerimientos Funcionales:</h3>
+        <ul>
+            <li>Solicitar la categoría del empleado y las horas trabajadas.</li>
+            <li>Calcular el sueldo básico según la tarifa horaria.</li>
+            <li>Calcular la bonificación por hijos según la cantidad de hijos.</li>
+            <li>Calcular el sueldo bruto sumando el sueldo básico y la bonificación por hijos.</li>
+            <li>Aplicar el descuento correspondiente según el sueldo bruto.</li>
+            <li>Calcular el sueldo neto restando el descuento del sueldo bruto.</li>
+        </ul>
+        
+        <a href="dart/S6_ejercicio04.dart">Ver Ejercicio04</a>
+    </div>
+</div>
 
         <section id="semana7">
             <h2>Semana 7</h2>
