@@ -72,11 +72,11 @@
 <div class="accordion">
     <input type="checkbox" id="exercise1" class="toggle-input">
     <label for="exercise1" class="toggle-btn">Ejercicio 01</label>
-    
+
     <div class="toggle-content">
         <h3>Enunciado:</h3>
         <p>Una empresa paga a sus vendedores un sueldo bruto que se calcula sumando un sueldo básico más una comisión. El sueldo básico es S/. 350.75. La comisión es igual al 5% del importe total vendido en el mes. Por ley, todo empleado está sujeto a un descuento igual al 15% del sueldo bruto. Diseñe un algoritmo que imprima la boleta de un vendedor indicando el sueldo básico, la comisión, el sueldo bruto, el descuento y el sueldo neto.</p>
-        
+
         <h3>Requerimientos Funcionales:</h3>
         <ul>
             <li>Calcular la comisión (5% de las ventas).</li>
@@ -85,25 +85,61 @@
             <li>Calcular el sueldo neto restando el descuento al sueldo bruto.</li>
         </ul>
 
-        <!-- Enlace para cargar y mostrar el código -->
-        <a href="#" onclick="loadCode('dart/S6_ejercicio01.dart', 'codeBlock1')">Ver Ejercicio01</a>
-        
-        <!-- Contenedor donde se mostrará el código -->
-        <pre><code id="codeBlock1"></code></pre>
+        <h3>Código Dart:</h3>
+        <pre><code>
+// Código Dart para calcular la boleta de un vendedor
+import 'dart:io';
+
+class Vendedor {
+  double sueldoBasico = 350.75;
+  double porcentajeComision = 0.05;
+  double porcentajeDescuento = 0.15;
+  double totalVendido = 0.0;
+
+  Vendedor(double totalVendido) {
+    this.totalVendido = totalVendido;
+  }
+
+  double calcularComision() {
+    return totalVendido * porcentajeComision;
+  }
+
+  double calcularSueldoBruto() {
+    return sueldoBasico + calcularComision();
+  }
+
+  double calcularDescuento() {
+    return calcularSueldoBruto() * porcentajeDescuento;
+  }
+
+  double calcularSueldoNeto() {
+    return calcularSueldoBruto() - calcularDescuento();
+  }
+
+  void imprimirBoleta() {
+    print('\n--- Boleta de Pago ---');
+    print('Sueldo Básico: S/. ${sueldoBasico.toStringAsFixed(2)}');
+    print('Comisión: S/. ${calcularComision().toStringAsFixed(2)}');
+    print('Sueldo Bruto: S/. ${calcularSueldoBruto().toStringAsFixed(2)}');
+    print('Descuento (15%): S/. ${calcularDescuento().toStringAsFixed(2)}');
+    print('Sueldo Neto: S/. ${calcularSueldoNeto().toStringAsFixed(2)}');
+  }
+}
+
+void main() {
+  print('Ingresa el importe total vendido en el mes: ');
+  String? input = stdin.readLineSync();
+  double totalVendido = double.parse(input!);
+
+  Vendedor vendedor = Vendedor(totalVendido);
+  vendedor.imprimirBoleta();
+}
+        </code></pre>
     </div>
 </div>
 
-<script>
-function loadCode(url, elementId) {
-    fetch(url)
-        .then(response => response.text())
-        .then(data => {
-            // Mostrar el contenido del archivo en el bloque de código
-            document.getElementById(elementId).textContent = data;
-        })
-        .catch(error => console.log('Error cargando el archivo:', error));
-}
-</script>
+
+           
 
 
 <!-- Acordeón para el Ejercicio 02 -->
