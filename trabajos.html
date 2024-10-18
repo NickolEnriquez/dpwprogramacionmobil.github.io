@@ -84,10 +84,27 @@
             <li>Aplicar un descuento del 15% sobre el sueldo bruto.</li>
             <li>Calcular el sueldo neto restando el descuento al sueldo bruto.</li>
         </ul>
+
+        <!-- Enlace para cargar y mostrar el código -->
+        <a href="#" onclick="loadCode('dart/S6_ejercicio01.dart', 'codeBlock1')">Ver Ejercicio01</a>
         
-        <a href="dart/S6_ejercicio01.dart">Ver Ejercicio01</a>
+        <!-- Contenedor donde se mostrará el código -->
+        <pre><code id="codeBlock1"></code></pre>
     </div>
 </div>
+
+<script>
+function loadCode(url, elementId) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            // Mostrar el contenido del archivo en el bloque de código
+            document.getElementById(elementId).textContent = data;
+        })
+        .catch(error => console.log('Error cargando el archivo:', error));
+}
+</script>
+
 
 <!-- Acordeón para el Ejercicio 02 -->
 <div class="accordion">
